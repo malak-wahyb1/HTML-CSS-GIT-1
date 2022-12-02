@@ -56,13 +56,35 @@
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
           </div>
           <div class="contact-form__field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="contact-form__field">
+            <label for="message">Message</label>
             <textarea
               name="message"
               placeholder="Your message should not be longer than 200 words."
+              id="message"
+              required
             ></textarea>
+          </div>
+          <div class="contact-form__field">
+            <fieldset>
+              <legend>What branch are you interested in?</legend>
+              <input type="radio" name="branch" id="london" value="london" /><label for="london"
+                >London</label
+              ><br /><br />
+              <input type="radio" name="branch" id="glasgow" value="glasgow" /><label for="glasgow"
+                >Glasgow</label
+              ><br /><br />
+              <input type="radio" name="branch" id="manchester" valus="manchester" /><label
+                for="manchester"
+                >Manchester</label
+              >
+            </fieldset>
           </div>
           <button type="submit">Send</button>
         </form>
@@ -74,7 +96,7 @@
             href="https://github.com/coditech/Submissions/tree/master/Exercises/html-css-git-exercises"
             >Built</a
           >
-          with ♥ for <a href="https://codi.tech/">Codi</a>.
+          with <span class="love">♥</span> for <a href="https://codi.tech/">Codi</a>.
         </p>
         <p>
           <svg
